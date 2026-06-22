@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WebTech Studio | Diseño Web Futurista</title>
+<meta name="description" content="Diseño y desarrollo web futurista para empresas y negocios. Servicios web profesionales con estilo tienda digital.">
+
+<style>
+:root {
+    --primary: #00eaff;
+    --secondary: #7b5cff;
+    --bg: #05070f;
+    --card: #0e1325;
+    --text: #e5e9ff;
+    --muted: #9aa3d9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: radial-gradient(circle at top, #0b1030, #05070f);
+    color: var(--text);
+}
+
+/* HEADER */
+header {
+    padding: 90px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header p {
+    max-width: 720px;
+    margin: auto;
+    font-size: 1.2rem;
+    color: var(--muted);
+}
+
+/* SECTIONS */
+section {
+    padding: 70px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* STORE GRID */
+.store {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+/* PRODUCT CARD */
+.product {
+    background: linear-gradient(180deg, #0f1430, #090d1f);
+    border: 1px solid rgba(0,234,255,0.2);
+    border-radius: 18px;
+    padding: 34px 28px;
+    transition: all 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 50px rgba(0,234,255,0.3);
+}
+
+.product h3 {
+    margin-top: 0;
+    color: var(--primary);
+    font-size: 1.4rem;
+}
+
+.product p {
+    color: var(--muted);
+}
+
+.price {
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin: 22px 0;
+}
+
+/* CONTACT BOX */
+.contact-box {
+    max-width: 460px;
+    margin: 80px auto 0;
+    background: linear-gradient(180deg, #0f1430, #090d1f);
+    border: 1px solid rgba(123,92,255,0.35);
+    border-radius: 20px;
+    box-shadow: 0 0 45px rgba(123,92,255,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 70px rgba(0,234,255,0.4);
+}
+
+.contact-box a {
+    display: block;
+    padding: 36px 26px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact-box .label {
+    display: block;
+    font-size: 1rem;
+    color: var(--muted);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contact-box .phone {
+    font-size: 2.1rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 35px 20px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>WebTech Studio</h1>
+    <p>Diseño y desarrollo web futurista para empresas y negocios que quieren destacar y vender más.</p>
+</header>
+
+<section>
+    <div class="store">
+
+        <div class="product">
+            <h3>Landing Page Futurista</h3>
+            <p>Página moderna y optimizada para captar clientes.</p>
+            <div class="price">$149</div>
+        </div>
+
+        <div class="product">
+            <h3>Web Corporativa Pro</h3>
+            <p>Imagen profesional para empresas y marcas.</p>
+            <div class="price">$299</div>
+        </div>
+
+        <div class="product">
+            <h3>Tienda Online</h3>
+            <p>Vende productos o servicios 24/7 con diseño premium.</p>
+            <div class="price">$499</div>
+        </div>
+
+    </div>
+
+    <div class="contact-box">
+        <a href="tel:633734826">
+            <span class="label">Contáctanos</span>
+            <span class="phone">633 734 826</span>
+        </a>
+    </div>
+</section>
+
+<footer>
+    © 2026 WebTech Studio · Diseño Web Futurista
+</footer>
+
+</body>
+</html>
